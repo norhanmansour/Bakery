@@ -1,0 +1,214 @@
+        .main-color {
+            background-color: #AE9768;
+        }
+        
+        @font-face {
+            font-family: 'algeriaRegular';
+            src: url(../webfonts/AlegreyaSans-Regular.ttf);
+        }
+        /* :root {
+    scroll-behavior: smooth;
+} */
+        
+        body {
+            font-family: algeriaRegular;
+            overflow: hidden;
+        }
+        
+        .w-20 {
+            width: 20%;
+        }
+        /* style color box */
+        
+        .color-box {
+            position: fixed;
+            left: 0;
+            top: 200px;
+            z-index: 99999;
+        }
+        
+        .color-box i {
+            background-color: #AE9768;
+            height: fit-content;
+            color: white;
+            padding: 10px;
+        }
+        
+        .colors-option {
+            background-color: rgb(246, 231, 231);
+            border: 5px solid #AE9768;
+            padding: 10px;
+        }
+        
+        .colors-option li {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+        /* end of color box style */
+        /* loading page style */
+        
+        #loading {
+            background-color: #AE9768;
+            position: fixed;
+            inset: 0;
+            z-index: 999999999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        @keyframes spinner {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .fa-spinner {
+            /* Apply 'spinner' keyframes looping once every second (1s)  */
+            animation: spinner 2s linear infinite;
+        }
+        /* end loading page style */
+        /* start home section styling */
+        
+        #home {
+            background-image: url(../images/home.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+        
+        #home h1 {
+            font-size: 76px;
+        }
+        
+        #home p {
+            font-size: 22px;
+        }
+        
+        .scroll-shape {
+            width: 30px;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 40%;
+            background-color: transparent;
+            position: relative;
+        }
+        
+        .scroll-shape::after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            animation: upDown 2s infinite;
+            animation-timing-function: linear;
+        }
+        
+        @keyframes upDown {
+            0% {
+                top: 5px;
+                opacity: 100%;
+            }
+            50% {
+                top: 20px;
+                opacity: 10%;
+            }
+            100% {
+                top: 45px;
+                opacity: 0%;
+            }
+        }
+        /*******************************end home section styling******************** */
+        /* start about styling */
+        
+        #about i,
+        #contact i {
+            color: #AE9768;
+            border: 0.5px solid rgb(218, 214, 214);
+            padding: 10px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        /**************** end about styling *****************************/
+        /* start location styling */
+        
+        #location,
+        #contact {
+            background-color: #F8F8F8;
+        }
+        /******************* end location styling *******************/
+        /*contact styling */
+        
+        #contact h5,
+        #contact h2 {
+            color: #AE9768
+        }
+        /* end contact */
+        /*********************************** details ********************************/
+        
+        #details {
+            background-color: #403D38;
+        }
+        
+        #details p {
+            font-family: algeria;
+            color: #686868;
+            font-size: 16px;
+            line-height: 32px;
+            padding: 0 10px;
+        }
+        
+        #details h5 {
+            margin-bottom: 30px;
+            color: white;
+            padding: 0 10px;
+        }
+        
+        .map {
+            background-image: url(../images/contact-details-map.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+        
+        #details .backg-img i {
+            color: #969696;
+            width: 40px;
+            height: 40px;
+        }
+        /************************* footer section and social media styling ************************/
+        
+        #copy-rights {
+            background-color: #353330;
+            text-align: center;
+            color: #969696;
+        }
+        
+        #copy-rights i {
+            margin-right: 10px;
+            border: 1px solid #969696;
+            border-radius: 50%;
+            padding: 10px;
+            font-size: 20px;
+            transition: all 0.5s;
+        }
+        
+        #copy-rights i:hover {
+            background-color: steelblue;
+            color: white;
+            border: 2px solid white;
+        }
+        /* scroll up  */
+        
+        .scrollUp {
+            width: fit-content;
+            cursor: pointer;
+            position: fixed;
+            bottom: 5px;
+            right: 10px;
+            display: none;
+            z-index: 10000;
+        }
